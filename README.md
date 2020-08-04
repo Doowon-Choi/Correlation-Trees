@@ -1,9 +1,7 @@
 # Correlation Trees
 
 This repository contains Python code for building correlation trees. The idea of correlation tree is that the correlation of two variables of our interest can
-be different depending on the conditions/interactions of other covariates. Correlation trees identify subgroups with different correlations and conditions of covariates that lead to
-such difference. Correlation trees are developed not for *prediction*, but for *explanatory tool*, like clustering with specific respect to correlation measures.
-Details are found in the reference below.
+be different depending on the conditions/interactions of other covariates. Correlation trees automatically identify subgroups with different correlations and conditions of covariates that lead to such difference. Correlation trees are developed not for *prediction*, but for *explanatory tool*, like clustering with specific respect to correlation measures. The current version provides main effect test alone for split variable selection. Details are found in the reference below.
 
 ## Train correlation trees
 Before constructing correlation trees, the variables in the dataset should be carefully designed.   
@@ -48,7 +46,7 @@ Correlation trees are able to handle linear correlation measure (e.g., Pearson's
 
 ## Example of constructed correlation tree   
 The following figure is a constructed linear correlation tree with Type 2 objective function in brain-behavior dataset. Subgroups with positive correlation mean subjects willing
-to take a risk, while those with negative correlation mean subjects inclined to avoid risk.   
+to take a risk, while those with negative correlation mean subjects inclined to avoid a risk. We can easily find that different people have different tendency depending on age bracket and gender.
 
 <img src="https://user-images.githubusercontent.com/69023373/89252932-c6079e00-d5e0-11ea-86a4-8b85b00d0cde.PNG" width="50%">   
 
